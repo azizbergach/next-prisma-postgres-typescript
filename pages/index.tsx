@@ -40,7 +40,7 @@ export default function Home({ initialUsers }: AppProps) {
   const [FirstName, setFirstName] = useState("");
   const [LastName, setLastName] = useState("");
   const [Email, setEmail] = useState("");
-  const [Age, setAge] = useState();
+  const [Age, setAge] = useState("");
   const [Avatar, setAvatar] = useState("");
 
   return (
@@ -53,7 +53,7 @@ export default function Home({ initialUsers }: AppProps) {
               FirstName,
               LastName,
               Email,
-              Age: Number(Age),
+              Age: Age,
               Avatar
             };
 
@@ -62,7 +62,7 @@ export default function Home({ initialUsers }: AppProps) {
             setFirstName("");
             setLastName("");
             setEmail("");
-            setAge(undefined);
+            setAge("");
             setAvatar("");
           }}
         >

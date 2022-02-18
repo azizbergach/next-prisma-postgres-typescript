@@ -12,6 +12,6 @@ model users {
   FirstName String
   LastName String
   Email String
-  Age Int
+  Age String
   Avatar String
 }
