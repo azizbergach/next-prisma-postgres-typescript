@@ -86,7 +86,7 @@ export default function Home({ initialUsers }: AppProps) {
               label="How old are you?"
               type="number"
               value={Age}
-              onChange={(e) => setAge(Number(e.target.value))}
+              onChange={(e) => setAge(e.target.value)}
             />
             <FormInput
               label="Avatar URL"
